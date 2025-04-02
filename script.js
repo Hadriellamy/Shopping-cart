@@ -40,3 +40,10 @@ function updateCart(id, price, qty) {
     localStorage.setItem("cart", JSON.stringify(cart));
     updateSummary();
 }
+
+function removeProduct(id) {
+    delete cart[id];
+    localStorage.setItem("cart", JSON.stringify(cart));
+    fetchProducts();
+}
+
