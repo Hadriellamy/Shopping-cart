@@ -28,3 +28,14 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
+
+.product-card {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.product-card img {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
