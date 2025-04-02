@@ -43,5 +43,6 @@ git clone https://github.com/Hadriellamy/shopping-cart.git
 
 
 You can visit the site :
+
 ```bash
-https://hadriellamy.github.io/shopping-cart/
+[git clone https://github.com/Hadriellamy/shopping-cart.git](https://hadriellamy.github.io/shopping-cart/)
