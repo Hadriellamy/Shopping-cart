@@ -60,3 +60,4 @@ function updateSummary() {
 }
 
 fetchProducts();
+
