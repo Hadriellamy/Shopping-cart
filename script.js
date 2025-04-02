@@ -29,3 +29,14 @@ function displayProducts(products) {
         container.appendChild(card);
     });
 }
+
+function updateCart(id, price, qty) {
+    qty = parseInt(qty);
+    if (qty <= 0) {
+        delete cart[id];
+    } else {
+        cart[id] = { price: price, qty: qty };
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateSummary();
+}
