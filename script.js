@@ -11,3 +11,21 @@ async function fetchProducts() {
         console.error("Fetch error:", error);
     }
 }
+
+function displayProducts(products) {
+    const container = document.getElementById("products");
+    container.innerHTML = "";
+    products.forEach(product => {
+        const quantity = cart[product.id]?.qty || 0;
+        const card = document.createElement("div");
+        card.className = "product-card";
+        card.innerHTML = `
+            <h4>${product.title}</h4>
+            <img src="${product.image}" />
+            <p>Price: $${product.price}</p>
+            <input type="number" min="0" value="${quantity}" onchange="updateCart(${product.id}, ${product.price}, this.value)">
+            <button onclick="removeProduct(${product.id})">Remove</button>
+        `;
+        container.appendChild(card);
+    });
+}
