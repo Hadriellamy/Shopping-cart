@@ -47,3 +47,14 @@ function removeProduct(id) {
     fetchProducts();
 }
 
+function updateSummary() {
+    let total = 0;
+    let count = 0;
+    for (let id in cart) {
+        total += cart[id].price * cart[id].qty;
+        count += cart[id].qty;
+    }
+    let shipping = count > 4 ? 10 : 0;
+    document.getElementById("total").innerText = `Total: $${total.toFixed(2)}`;
+    document.getElementById("shipping").innerText = `Shipping: $${shipping}`;
+}
