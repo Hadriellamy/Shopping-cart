@@ -58,3 +58,5 @@ function updateSummary() {
     document.getElementById("total").innerText = `Total: $${total.toFixed(2)}`;
     document.getElementById("shipping").innerText = `Shipping: $${shipping}`;
 }
+
+fetchProducts();
