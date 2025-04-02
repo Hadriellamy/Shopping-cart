@@ -50,11 +50,14 @@ function removeProduct(id) {
 function updateSummary() {
     let total = 0;
     let count = 0;
+
     for (let id in cart) {
         total += cart[id].price * cart[id].qty;
         count += cart[id].qty;
     }
-    let shipping = count > 4 ? 10 : 0;
+
+    let shipping = Math.floor(count / 5) * 10;
+
     document.getElementById("total").innerText = `Total: $${total.toFixed(2)}`;
     document.getElementById("shipping").innerText = `Shipping: $${shipping}`;
 }
