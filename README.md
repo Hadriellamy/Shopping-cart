@@ -40,3 +40,8 @@ This project fetches products from the [Fake Store API](https://fakestoreapi.com
 
 ```bash
 git clone https://github.com/Hadriellamy/shopping-cart.git
+
+
+You can visit the site :
+```bash
+https://hadriellamy.github.io/shopping-cart/
