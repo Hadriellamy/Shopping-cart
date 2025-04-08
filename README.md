@@ -9,6 +9,8 @@ This project fetches products from the Fake Store API, displays them as cards, a
 - View a live cart summary  
 - Persist the cart using `localStorage`
 
+
+(To see the code, go to the development branch.)
 ---
 
 ## ✨ Live Demo
