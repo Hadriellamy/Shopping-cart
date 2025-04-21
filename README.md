@@ -15,7 +15,7 @@ This project fetches products from the Fake Store API, displays them as cards, a
 
 ## ✨ Live Demo
 
-👉 [Click here to see the live demo](https://hadriellamy.github.io/shopping-cart/)
+👉 [Click here to see the live demo](https://hadriellamy.github.io/Shopping-cart/)
 
 ---
 
